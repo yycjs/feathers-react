@@ -400,6 +400,7 @@ function main() {
                 break;
             case 37: // left arrow
             case 33: // page up
+                console.log(event);
                 event.preventDefault();
                 prevSlide();
                 break;
@@ -555,8 +556,12 @@ function main() {
             currentSlideNo = Number(window.location.hash.replace('#slide', ''));
         }
 
+
+        $(document).keydown(function(e){
+            handleBodyKeyDown(e);
+        });
         document.addEventListener('keyup', checkModifierKeyUp, false);
-        document.addEventListener('keydown', handleBodyKeyDown, false);
+        // document.addEventListener('keydown', handleBodyKeyDown, false);
         document.addEventListener('keydown', checkModifierKeyDown, false);
         document.addEventListener('DOMMouseScroll', handleWheel, false);
 
