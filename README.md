@@ -1,4 +1,3 @@
-slide-template
-==============
+### YYCjs Slide Template
 
-Template project for our slides
+Our template for our monthly slide deck using [landslide](https://github.com/adamzap/landslide). Feel free to rip it off if you would like.

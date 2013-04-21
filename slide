@@ -1,0 +1,2 @@
+#!/bin/sh
+landslide slides.md -l no -r -t theme -d index.html
