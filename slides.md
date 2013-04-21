@@ -31,7 +31,6 @@
 * Something awesome
 * More awesomeness
 
-
 ---
 
 ## Next Month
