@@ -2,6 +2,7 @@
   "name": "slide-template",
   "description": "The YYCJS slide template",
   "version": "0.3.0",
+  "private": true,
   "homepage": "http://yycjs.com",
   "repository": {
     "type": "git",
