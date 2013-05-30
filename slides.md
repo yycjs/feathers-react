@@ -20,6 +20,14 @@
 
 ![Assembly](images/sponsors/assembly_logo.png)
 
+## PetroFeed
+
+![PetroFeed](images/sponsors/pf-logo.png)
+
+---
+
+## Our Sponsors
+
 ## Village Brewery
 
 ![Village Brewery](images/sponsors/village_brewery_logo_inverted.png)
