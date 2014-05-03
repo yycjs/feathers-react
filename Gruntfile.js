@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     exec: {
       cleaver: {
-        command: 'cleaver slides.md'
+        command: 'cleaver --debug slides.md'
       }
     },
     watch: {

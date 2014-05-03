@@ -392,7 +392,128 @@ pre .chunk {
   color: #aaa
 }
 
+* {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Oxygen', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 100;
+  color: #333333;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 20px 0 20px 0;
+}
+
+h2 {
+  color: #AAAAAA;
+  font-weight: 300;
+  font-size: 200%;
+  margin: 20px 0;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+}
+
+.progress-bar {
+  background: #DF6868;
+}
+
+.logo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 140px;
+  width: 140px;
+}
+
+@media (max-width: 979px) {
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.slide-content {
+  width: 100%;
+  height: 100%;
+/*  min-height: 600px;
+  min-width: 800px;
+  max-height: 800px;
+  max-width: 1200px;*/
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.presenter img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border: 5px solid #AAAAAA;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.presenter h2 {
+  color: #333333;
+}
+.presenter p {
+  text-align: center;
+}
+
+.presenter ul {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.presenter li {
+  display: inline;
+}
+
+.sponsors p {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.sponsors p > img {
+  width: 100%;
+  max-width: 240px;
+}
   </style>
 </head>
 <body>
@@ -401,45 +522,44 @@ pre .chunk {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="yycjs-slide-template">YYCjs Slide Template</h1>
+    <section class="slide-content"><h1 id="yyc-js-presents-">YYC.js Presents:</h1>
+<h2 id="an-epic-slide-template">An Epic Slide Template</h2>
+<h3 id="that-totally-kicks-some-ass">That totally kicks some ass</h3>
+<h4 id="kind-of-like-chuck-norris">Kind of like Chuck Norris</h4>
+<h5 id="and-jackie-chan">And Jackie Chan</h5>
+<p>Maybe even Chris Rock</p>
 </section>
   </div>
   <div class="slide hidden" id="slide-2">
-    <section class="slide-content"><h2 id="our-presenters">Our Presenters</h2>
+    <section class="slide-content"><h1 id="brought-to-you-by">Brought to you by</h1>
+</section>
+  </div>
+  <div class="slide hidden  presenter" id="slide-3">
+    <section class="slide-content"><p><img src="http://gravatar.com/avatar/a14850281f19396480bdba4aab2d52ef?s=200" alt="David Luecke"></p>
 <h2 id="david-luecke">David Luecke</h2>
-<ul>
-<li>GitHub: <a href="http://daffl.github.com">daffl.github.com</a>, Twitter: <a href="http://twitter.com/daffl">@daffl</a></li>
-</ul>
+<p>GitHub: <a href="http://daffl.github.com">daffl.github.com</a>, Twitter: <a href="http://twitter.com/daffl">@daffl</a></p>
+</section>
+  </div>
+  <div class="slide hidden  presenter" id="slide-4">
+    <section class="slide-content"><p><img src="http://gravatar.com/avatar/23aba778a7daae99348aeb0728cf4aec?s=200" alt="Eric Kryski"></p>
 <h2 id="eric-kryski">Eric Kryski</h2>
 <ul>
-<li>GitHub: <a href="http://ekryski.github.com">ekryski.github.com</a>, Twitter: <a href="http://twitter.com/ekryski">@ekryski</a></li>
+<li><i class="fa fa-github"></i> <a href="https://github.com/ekryski">github.com/ekryski</a></li>
+<li><i class="fa fa-twitter"></i> <a href="http://twitter.com/ekryski">@ekryski</a></li>
+<li><i class="fa fa-home"></i> <a href="http://erickryski.com">erickryski.com</a></li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-3">
-    <section class="slide-content"><h2 id="our-sponsors">Our Sponsors</h2>
-<h2 id="assembly-co-working-space">Assembly Co-working Space</h2>
+  <div class="slide hidden  sponsors" id="slide-5">
+    <section class="slide-content"><h1 id="our-sponsors">Our Sponsors</h1>
 <p><img src="img/sponsors/assembly_logo.png" alt="Assembly"></p>
-<h2 id="petrofeed">PetroFeed</h2>
-<p><img src="img/sponsors/pf-logo.png" alt="PetroFeed"></p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-4">
-    <section class="slide-content"><h2 id="our-sponsors">Our Sponsors</h2>
-<h2 id="village-brewery">Village Brewery</h2>
-<p><img src="img/sponsors/village_brewery_logo_inverted.png" alt="Village Brewery"></p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-5">
-    <section class="slide-content"><h2 id="last-month">Last Month</h2>
-<ul>
-<li>Something awesome</li>
-<li>More awesomeness</li>
-</ul>
+<p><img src="img/sponsors/village_brewery_logo.png" alt="Village Brewery"></p>
+<p><img src="img/sponsors/startup_calgary_logo.png" alt="Startup Calgary"></p>
+<p><img src="img/sponsors/petrofeed_logo.png" alt="PetroFeed"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-6">
-    <section class="slide-content"><h2 id="next-month">Next Month</h2>
+    <section class="slide-content"><h1 id="last-month">Last Month</h1>
 <ul>
 <li>Something awesome</li>
 <li>More awesomeness</li>
@@ -447,20 +567,16 @@ pre .chunk {
 </section>
   </div>
   <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><div class="author">
-  <h1 class="name">Eric Kryski</h1>
-    <h3 class="twitter">
-      <a href="http://twitter.com/@ekryski">@ekryski</a>
-    </h3>
-    <h3 class="url">
-      <a href="http://erickryski.com">http://erickryski.com</a>
-    </h3>
-</div>
+    <section class="slide-content"><h1 id="next-month">Next Month</h1>
+<ul>
+<li>Something awesome</li>
+<li>More awesomeness</li>
+</ul>
 </section>
   </div>
 
 
-
+  <img src="theme&#x2F;logo.png" alt="YYC.js logo" class="logo">
   <script type="text/javascript">
     /**
  * Returns the current page number of the presentation.
