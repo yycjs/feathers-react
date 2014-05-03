@@ -4,14 +4,14 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     exec: {
-      landslide: {
-        command: 'landslide landslide.cfg'
+      cleaver: {
+        command: 'cleaver slides.md'
       }
     },
     watch: {
       slides: {
-        files: ['slides.md', 'theme/**/*'],
-        tasks: ['exec:landslide']
+        files: ['slides.md', 'theme/**/*', 'img/**/*'],
+        tasks: ['exec:cleaver']
       }
     }
   });

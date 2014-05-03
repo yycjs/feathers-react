@@ -1,6 +1,16 @@
+title: YYCjs Slides
+author:
+  name: Eric Kryski
+  twitter: ekryski
+  url: http://erickryski.com
+output: index.html
+controls: false
+
+--
+
 # YYCjs Slide Template
 
----
+--
 
 ## Our Presenters
 
@@ -12,34 +22,34 @@
 
 * GitHub: [ekryski.github.com](http://ekryski.github.com), Twitter: [@ekryski](http://twitter.com/ekryski)
 
----
+--
 
 ## Our Sponsors
 
 ## Assembly Co-working Space
 
-![Assembly](images/sponsors/assembly_logo.png)
+![Assembly](img/sponsors/assembly_logo.png)
 
 ## PetroFeed
 
-![PetroFeed](images/sponsors/pf-logo.png)
+![PetroFeed](img/sponsors/pf-logo.png)
 
----
+--
 
 ## Our Sponsors
 
 ## Village Brewery
 
-![Village Brewery](images/sponsors/village_brewery_logo_inverted.png)
+![Village Brewery](img/sponsors/village_brewery_logo_inverted.png)
 
----
+--
 
 ## Last Month
 
 * Something awesome
 * More awesomeness
 
----
+--
 
 ## Next Month
 
