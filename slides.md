@@ -28,7 +28,8 @@ Maybe even Chris Rock
 
 ## David Luecke
 
-GitHub: [daffl.github.com](http://daffl.github.com), Twitter: [@daffl](http://twitter.com/daffl)
+* [<i class="fa fa-github"></i> daffl](https://github.com/daffl)
+* [<i class="fa fa-twitter"></i> @daffl](http://twitter.com/daffl)
 
 -- presenter
 
@@ -36,9 +37,9 @@ GitHub: [daffl.github.com](http://daffl.github.com), Twitter: [@daffl](http://tw
 
 ## Eric Kryski
 
-* <i class="fa fa-github"></i> [github.com/ekryski](https://github.com/ekryski)
-* <i class="fa fa-twitter"></i> [@ekryski](http://twitter.com/ekryski)
-* <i class="fa fa-home"></i> [erickryski.com](http://erickryski.com)
+* [<i class="fa fa-github"></i> ekryski](https://github.com/ekryski)
+* [<i class="fa fa-twitter"></i> @ekryski](http://twitter.com/ekryski)
+* [<i class="fa fa-home"></i> erickryski.com](http://erickryski.com)
 
 -- sponsors
 
