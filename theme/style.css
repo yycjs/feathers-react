@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100;
   color: #333333;
+  background: #FFFFFF;
 }
 
 h1 {
@@ -29,6 +30,14 @@ h3 {
 
 p {
   font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+  margin: 10px 0;
+}
+
+ul {
+  padding: 20px 0 20px 60px;
 }
 
 .progress-bar {
@@ -75,6 +84,16 @@ p {
   padding: 30px;
 }
 
+.title .slide-content {
+  display: table;
+}
+
+.title h1 {
+  display: table-cell; 
+  vertical-align: middle;
+  z-index: 10;
+}
+
 .presenter img {
   height: 200px;
   width: 200px;
@@ -110,6 +129,10 @@ p {
   padding: 0 10px;
 }
 
+.sponsors h1 {
+  margin: 20px 0 40px 0;
+}
+
 .sponsors p {
   float: left;
   text-align: center;
@@ -120,4 +143,11 @@ p {
 .sponsors p > img {
   width: 100%;
   max-width: 240px;
+}
+
+.image p > img {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 20px auto;
+  display: table-cell;
 }
