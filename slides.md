@@ -6,7 +6,7 @@ logo: theme/logo.png
 
 --
 
-# YYC.js Presents:
+# YYC.js Presents
 
 ## An Epic Slide Template
 

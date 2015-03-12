@@ -401,10 +401,15 @@ pre .chunk {
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100;
   color: #333333;
+  background: url('theme/logo.png') #FFFFFF right bottom no-repeat;
 }
 
 h1 {
@@ -425,6 +430,14 @@ h3 {
 
 p {
   font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+  margin: 10px 0;
+}
+
+ul {
+  padding: 20px 0 20px 60px;
 }
 
 .progress-bar {
@@ -471,6 +484,16 @@ p {
   padding: 30px;
 }
 
+.title .slide-content {
+  display: table;
+}
+
+.title h1 {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 10;
+}
+
 .presenter img {
   height: 200px;
   width: 200px;
@@ -506,6 +529,10 @@ p {
   padding: 0 10px;
 }
 
+.sponsors h1 {
+  margin: 20px 0 40px 0;
+}
+
 .sponsors p {
   float: left;
   text-align: center;
@@ -517,6 +544,14 @@ p {
   width: 100%;
   max-width: 240px;
 }
+
+.image p > img {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 20px auto;
+  display: table-cell;
+}
+
   </style>
 </head>
 <body>
@@ -525,7 +560,7 @@ p {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="yyc-js-presents-">YYC.js Presents:</h1>
+    <section class="slide-content"><h1 id="yyc-js-presents">YYC.js Presents</h1>
 <h2 id="an-epic-slide-template">An Epic Slide Template</h2>
 <h3 id="that-totally-kicks-some-ass">That totally kicks some ass</h3>
 <h4 id="kind-of-like-chuck-norris">Kind of like Chuck Norris</h4>
@@ -582,7 +617,6 @@ p {
   </div>
 
 
-  <img src="theme&#x2F;logo.png" alt="YYC.js logo" class="logo">
   <script type="text/javascript">
     /**
  * Returns the current page number of the presentation.
