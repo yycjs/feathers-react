@@ -14,6 +14,7 @@ body {
   font-weight: 100;
   color: #333333;
   background: url('theme/logo.png') #FFFFFF right bottom no-repeat;
+  margin: 0;
 }
 
 h1 {
@@ -154,4 +155,20 @@ ul {
   max-height: 400px;
   margin: 20px auto;
   display: table-cell;
+}
+
+.centered {
+  text-align: center;
+}
+
+code, pre {
+  border: none;
+}
+
+pre {
+  font-size: 80%;
+}
+
+.slide {
+  background: none;
 }
