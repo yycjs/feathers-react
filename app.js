@@ -31,25 +31,7 @@ const app = feathers()
 app.service('submissions').before({
   create(hook) {
     hook.data.votes = 1;
-  },
-
-  patch(hook) {
-    if(hook.data.vote) {
-      const id = hook.id;
-      const vote = hook.data.vote === 'down' ? -1 : 1;
-      const service = app.service('submissions');
-
-      delete hook.data.vote;
-
-      return service.get(id)
-        .then(submission => 
-          service.patch(id, { votes: submission.votes + vote })
-        )
-        .then(() => hook);
-    }
-  },
-
-  update: hooks.disable('external')
+  }
 });
 
 app.listen(3030);

@@ -11,11 +11,15 @@ class SubmissionList extends React.Component {
   }
 
   upvote(submission) {
-    this.props.service.patch(submission.id, { vote: 'up' });
+    this.props.service.patch(submission.id, {
+      votes: submission.votes + 1
+    });
   }
 
   downvote(submission) {
-    this.props.service.patch(submission.id, { vote: 'down' });
+    this.props.service.patch(submission.id, {
+      votes: submission.votes - 1
+    });
   }
 
   render() {
