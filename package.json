@@ -10,7 +10,9 @@
   "author": "",
   "license": "MIT",
   "system": {
-    "npmAlgorithm": "flat"
+    "main": "client",
+    "npmAlgorithm": "flat",
+    "configDependencies": ["live-reload"]
   },
   "dependencies": {
     "body-parser": "^1.15.1",
