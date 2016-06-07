@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "watch": "steal-tools live-reload"
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +15,7 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "feathers": "^2.0.1",
+    "feathers-errors": "^2.2.0",
     "feathers-hooks": "^1.5.4",
     "feathers-memory": "^0.7.1",
     "feathers-reactive": "^0.2.0",
@@ -31,5 +33,8 @@
     "socket.io-client": "^1.4.6",
     "steal": "^0.16.12",
     "steal-jsx": "0.0.2"
+  },
+  "devDependencies": {
+    "steal-tools": "^0.16.4"
   }
 }
