@@ -24,22 +24,25 @@ class SubmissionList extends React.Component {
 
   render() {
     if(this.state && this.state.submissions) {
-      return <div>
+      return <ul className="list-group">
         {this.state.submissions.data.map(submission => 
-          <h2 className="page-header" key={submission.id}>
-            <small>
-              <span className="glyphicon glyphicon-minus"
-                onClick={this.downvote.bind(this, submission)}>
-              </span>
-              {submission.votes}
-              <span className="glyphicon glyphicon-plus"
-                onClick={this.upvote.bind(this, submission)}>
-              </span>
-            </small>
-            <a href={submission.url}>{submission.title}</a>
-          </h2>
+          <li className="submission list-group-item" key={submission.id}>
+            <h2>
+              <small className="text-center pull-left">
+                <span className="glyphicon glyphicon-chevron-up"
+                  onClick={this.upvote.bind(this, submission)}>
+                </span>
+                <br />
+                <strong>{submission.votes}</strong><br/>
+                <span className="glyphicon glyphicon-chevron-down"
+                  onClick={this.downvote.bind(this, submission)}>
+                </span>
+              </small>
+              <a href={submission.url}>{submission.title}</a>
+            </h2>
+          </li>
         )}
-      </div>;
+      </ul>;
     }
 
     return <div>Loading...</div>
