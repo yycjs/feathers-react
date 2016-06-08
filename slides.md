@@ -90,3 +90,6 @@ app.service('todos').before({
 
 * [<i class="fa fa-github"></i> daffl](https://github.com/daffl)
 * [<i class="fa fa-twitter"></i> @daffl](http://twitter.com/daffl)
+
+
+[yycjs.com/feathers-react](http://yycjs.com/feathers-react)
