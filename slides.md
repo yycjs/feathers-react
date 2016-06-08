@@ -14,13 +14,20 @@ logo: theme/logo.png
 
 ## So what is it?
 
-> A _batteries included but easily swappable_ JavaScript library for creating real-time applications.
+> A batteries-included, modular JavaScript library for creating real-time applications.
 
 - Out-of-the-box service-oriented REST and real-time APIs
 - Universally usable in NodeJS, React Native and the browser
 - Supports 15+ databases, 3+ ORMs
 - Works with any client side stack
+- Drop-in replacement for Express 4
 - JWT authentication
+
+-- centered
+
+## Where it fits in
+
+<img src="img/feathers-venn.jpeg" alt="Where Feathers fits in" style="margin-top: 1em; width: 70%;" />
 
 --
 
@@ -46,11 +53,18 @@ const myService = {
 app.use('/todos', myService);
 ```
 
---
+-- centered
 
 ## Hooks
 
 > Pluggable middleware that runs before and after a service method:
+
+
+<img src="img/feathers-hooks.png" alt="Feathers hooks" style="width: 60%;" />
+
+--
+
+## Implementing Hooks
 
 ```javascript
 const hooks = require('feathers-hooks');
@@ -66,7 +80,7 @@ app.service('todos').before({
       .then(() => hook);
   }
 });
-````
+```
 
 -- presenter
 

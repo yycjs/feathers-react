@@ -548,18 +548,24 @@ pre {
   <div class="slide hidden" id="slide-2">
     <section class="slide-content"><h2 id="so-what-is-it-">So what is it?</h2>
 <blockquote>
-<p>A <em>batteries included but easily swappable</em> JavaScript library for creating real-time applications.</p>
+<p>A batteries-included, modular JavaScript library for creating real-time applications.</p>
 </blockquote>
 <ul>
 <li>Out-of-the-box service-oriented REST and real-time APIs</li>
 <li>Universally usable in NodeJS, React Native and the browser</li>
 <li>Supports 15+ databases, 3+ ORMs</li>
 <li>Works with any client side stack</li>
+<li>Drop-in replacement for Express 4</li>
 <li>JWT authentication</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-3">
+  <div class="slide hidden  centered" id="slide-3">
+    <section class="slide-content"><h2 id="where-it-fits-in">Where it fits in</h2>
+<p><img src="img/feathers-venn.jpeg" alt="Where Feathers fits in" style="margin-top: 1em; width: 70%;" /></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
     <section class="slide-content"><h2 id="services">Services</h2>
 <blockquote>
 <p>CRUD resources that can be used like an Express middleware:</p>
@@ -581,11 +587,16 @@ pre {
 app.use(<span class="hljs-string">'/todos'</span>, myService);</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-4">
+  <div class="slide hidden  centered" id="slide-5">
     <section class="slide-content"><h2 id="hooks">Hooks</h2>
 <blockquote>
 <p>Pluggable middleware that runs before and after a service method:</p>
 </blockquote>
+<p><img src="img/feathers-hooks.png" alt="Feathers hooks" style="width: 60%;" /></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><h2 id="implementing-hooks">Implementing Hooks</h2>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> hooks = <span class="hljs-built_in">require</span>(<span class="hljs-string">'feathers-hooks'</span>);
 
 app.configure(hooks());
@@ -598,11 +609,10 @@ app.service(<span class="hljs-string">'todos'</span>).before({
     <span class="hljs-keyword">return</span> sendEmail(hook.data)
       .then(() =&gt; hook);
   }
-});
-<span class="hljs-string">`</span></code></pre>
+});</code></pre>
 </section>
   </div>
-  <div class="slide hidden  presenter" id="slide-5">
+  <div class="slide hidden  presenter" id="slide-7">
     <section class="slide-content"><p><img src="http://gravatar.com/avatar/a14850281f19396480bdba4aab2d52ef?s=200" alt="David Luecke"></p>
 <h2 id="david-luecke">David Luecke</h2>
 <ul>
